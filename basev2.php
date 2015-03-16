@@ -8,6 +8,11 @@
  */
 
 /*
+    Funcoes Essenciais
+*/
+include "funcoes_essenciais.php";
+
+/*
     Carrega Configurações Define
 */
 include "config.inc.php";
@@ -33,7 +38,7 @@ function getBaseV2($tipo) {
     if($tmp) {
         $arq = $tmp."/$tmp.php";
         if(file_exists($arq))
-            { require $arq; }
+            { include $arq; }
         else
             { echo "FileExists Failt: $arq"; }
     } else {

@@ -1,14 +1,28 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: linda
- * Date: 16/03/15
- * Time: 08:58
+ * Exemplo...
+ * "Jesus"
  */
-
 ?>
-
 <?php include "basev2.php"; getBaseV2("php"); ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaseV2 Exemplos</title>
+
+    <?php getBaseV2("css"); ?>
+    <?php getBaseV2("javascript"); ?>
+
+</head>
+<body>
+    <?
+
+    ?>
+
+</body>
+</html>
 
 
 

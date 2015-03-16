@@ -30,8 +30,7 @@ try {
 /**
  *  Class para Log (Php & Console.log Javascript)
  */
-//use base\log\log;
-/* Console.log JS */
-//log::logJs("teste");
+use base\log\log;
+log::logJs("teste");
 
 
