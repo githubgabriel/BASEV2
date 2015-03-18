@@ -1,5 +1,41 @@
 <?php
 
+
+function parseDataBR($data) {
+    $data = explode("-",$data);
+    $data = $data[2]."/".$data[1]."/".$data[0];
+    return $data;
+}
+
+function parseDataSQL($data) {
+    $data = explode("/",$data);
+    $data = $data[0]."-".$data[1]."-".$data[2];
+    return $data;
+}
+
+
+function parseDataHoraBR($data) {
+    $data_ = explode(" ",$data);
+    $data = explode("-",$data_[0]);
+    $data = $data[2]."/".$data[1]."/".$data[0]." ".$data_[1];
+    return $data;
+}
+
+function parseDataHoraSQL($data) {
+    $data_ = explode(" ",$data);
+    $data = explode("/",$data_[0]);
+    $data = $data[0]."-".$data[1]."-".$data[2]." ".$data_[1];
+    return $data;
+}
+
+function redirecionar($link) {
+    echo "<script> window.location.href='".$link."'; </script>";
+}
+
+function redirecionarAjax($url) {
+    echo "<script> redirecionarAjax('".$url."'); </script>";
+}
+
 /**
  * Retorna se a conexão foi feita por HTTP ou HTTPS :)
  * @return mixed

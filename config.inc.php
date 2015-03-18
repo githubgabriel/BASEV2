@@ -24,7 +24,7 @@ if(HOST_ROOT == "localhost:8888" or HOST_ROOT == "localhost") {
     define("DATABASE_HOST","localhost");
     define("DATABASE_LOGIN","root");
     define("DATABASE_PASS","root");
-    define("DATABASE_DB","gabriel");
+    define("DATABASE_DB","GerenciadorMudas");
 } else {
 
     /* Conexao Online aqui.... */
