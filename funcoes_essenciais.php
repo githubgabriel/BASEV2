@@ -28,13 +28,25 @@ function parseDataHoraSQL($data) {
     return $data;
 }
 
+function include_JS($dirFileName) {
+    echo '<script src="'.$dirFileName.'"> </script>';
+}
+
+function include_CSS($dirFileName) {
+    echo '<link rel="stylesheet" href="'.$dirFileName.'" />';
+}
+
+
 function redirecionar($link) {
     echo "<script> window.location.href='".$link."'; </script>";
 }
 
+
+/* Funciona somente com  ajax-functions */
 function redirecionarAjax($url) {
     echo "<script> redirecionarAjax('".$url."'); </script>";
 }
+
 
 /**
  * Retorna se a conexão foi feita por HTTP ou HTTPS :)
