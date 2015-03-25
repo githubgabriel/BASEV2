@@ -23,7 +23,7 @@ define("AUTOLOAD_DIR_CLASS", "class");
 if(HOST_ROOT == "localhost:8888" or HOST_ROOT == "localhost") {
     define("DATABASE_HOST","localhost");
     define("DATABASE_LOGIN","root");
-    define("DATABASE_PASS","root");
+    define("DATABASE_PASS","root1313");
     define("DATABASE_DB","GerenciadorMudas");
 } else {
 
